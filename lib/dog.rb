@@ -35,9 +35,9 @@ class Dog
 
   def self.create(name:, breed:)
     dog = Dog.new(name, breed)
-    dog.save 
-    dog 
-  end 
+    dog.save
+    dog
+  end
 
   def update
     sql = "UPDATE dogs SET name = ?, breed = ? WHERE id = ?"
